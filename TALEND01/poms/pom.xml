@@ -15,6 +15,7 @@
     <module>jobs/process/job02_0.1</module>
     <module>jobs/process/job02_copy_0.1</module>
     <module>jobs/process/job03_0.1</module>
+    <module>jobs/process_mr/job03_batch_0.1</module>
   </modules>
   <properties>
     <talend.project.name>TALEND01</talend.project.name>
