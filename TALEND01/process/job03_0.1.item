@@ -131,7 +131,7 @@
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
     <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
-    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT &#10;  DATATEST.CARS.maker, &#10;  DATATEST.CARS.model, &#10;  DATATEST.CARS.mileage, &#10;  DATATEST.CARS.\&quot;year\&quot;, &#10;  DATATEST.CARS.eng_disp&#10;FROM DATATEST.CARS&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT &#10;  DATATEST.CARS.maker, &#10;  DATATEST.CARS.model, &#10;  DATATEST.CARS.mileage, &#10;  DATATEST.CARS.yar, &#10;  DATATEST.CARS.eng_disp&#10;FROM DATATEST.CARS&quot;"/>
     <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
     <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
     <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
@@ -152,7 +152,7 @@
       <elementValue elementRef="TRIM" value="false"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="mileage"/>
       <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="year"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="yar"/>
       <elementValue elementRef="TRIM" value="false"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="eng_disp"/>
       <elementValue elementRef="TRIM" value="false"/>
@@ -162,7 +162,7 @@
       <column comment="" key="false" length="-1" name="maker" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="model" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="mileage" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="year" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="yar" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="eng_disp" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
     </metadata>
   </node>
@@ -214,7 +214,7 @@
       <elementValue elementRef="DELETE_KEY" value="false"/>
       <elementValue elementRef="UPDATABLE" value="true"/>
       <elementValue elementRef="INSERTABLE" value="true"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="year"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="yar"/>
       <elementValue elementRef="UPDATE_KEY" value="false"/>
       <elementValue elementRef="DELETE_KEY" value="false"/>
       <elementValue elementRef="UPDATABLE" value="true"/>
@@ -235,7 +235,7 @@
       <column comment="" key="false" length="-1" name="maker" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="model" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="mileage" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="year" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="yar" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="eng_disp" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
     </metadata>
     <metadata connector="REJECT" name="REJECT">
@@ -244,7 +244,7 @@
       <column comment="" key="false" length="-1" name="maker" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="model" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="mileage" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="year" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="yar" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="eng_disp" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
     </metadata>
   </node>
@@ -253,7 +253,7 @@
       <elementValue elementRef="TRACE_COLUMN" value="eng_disp"/>
       <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
       <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-      <elementValue elementRef="TRACE_COLUMN" value="year"/>
+      <elementValue elementRef="TRACE_COLUMN" value="yar"/>
       <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
       <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
       <elementValue elementRef="TRACE_COLUMN" value="maker"/>
@@ -274,13 +274,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_3bd63522-1f05-4e13-9b26-9390e0750863"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>JDC9JHZEQUkaJbxb6qVCira1altQcbppV9C8SNpS6Icj5c2PrnjjYF4dErC2D1IsqtpK0B4uCe+b
-1EVXzqRLvw==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_75f68433-61b0-428d-9e21-8f261a044606"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>ksSIAT9SBaKTFfZaOrTHbpAhCc/Y6xaNeh+nNsKDonYmEfsDpzyqYDfPyAV46lBW7mVw3ewmg/Z+
-7IVr1h4knQ==</DigestValue></Reference></SignedInfo><SignatureValue>NonOvH1JDXcSdXWPHsdr7F+m3l49U1o1QLG8N46g6he96euAdcaxcravQ1q5r9p5l9b6aCA3QZTc
-uKS97e8euBy1t41ejjifnUoVJNnMVmxGKFA1DoSvFceVYY8tgqRlKMfTLWPhcjTVdSdkrSt98LO5
-lnyzgnwqX4VUiMlntbtWHunPt+95dfWal6b0UpNpMkVTHN/9/zKn1C8voAsRd/lEnfnl3+mQvyDz
-bfqCZOXQvUZu0SgSm7qML+LXUENOrI/Vuv6K8jSnbxfYsf77Dttf9jrJZTZBqnuNIq5vnPbgpD0f
-V7l1FBVJ3c+2DdVfErHrEX02vnYUkr+VYSWRuw==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_00c8c746-200a-4742-af0b-07f18554abd4"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>amgRtKtl5QDHJaPTGp8QeRZV9DBr0/jzIEs2ZBHvSS1lGfrBUbSBtIRT/oPmOj2SLSZMwDeCU/T+
+tI4RUXh5Cw==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_8669777a-9d2c-4d32-910d-c9c4117c716f"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>t5TiO3YO24gzZUBjFI6hrBNK7Ka8uqKX5T76qwpGHX9m66vkpBbcWjjJgbcVcbB90R3Qly3CGsa7
+PpNRlzW6vg==</DigestValue></Reference></SignedInfo><SignatureValue>LfmoarTDIHwRYBEq+IXPTOppgfkcYkCXbTIgErqxz9cKojmeU14KVnhhYgYIC1E5jXkrt1Kjb2yN
+OEmbW6jObkPnpn64e51dkMyHMiA9Xs2ZLWg2aCiIevWyfsumucpRuS6HNmTFDMpMg4sj5l8EHjI/
+xR1+CxARxuXYXID5M/oEqYj0iRdOB16i7O6/kmYbouPSHgAH/1SQQgnMgwIOgFeAhCX/RyuDf6Z2
+ie0Lo0JfzwD9352lZC241jkzbpx0mau21mBa5lmyhg2w0sPAoZVw5ZJVjJDGQboWc6+oUS7hLJxA
+Kaaojt/8e3CGhUV6o5aXQURPwu7Ytzl2kbeufw==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
 BVBhcmlzMQ4wDAYDVQQHDAVQYXJpczEUMBIGA1UECgwLVGFsZW5kIEluYy4xDDAKBgNVBAsMA1Im
 RDEWMBQGA1UEAwwNVGFsZW5kIFImRCBDQTEiMCAGCSqGSIb3DQEJARYTc2VjdXJpdHlAdGFsZW5k
 LmNvbTAeFw0xODAxMTgwMDA2MTJaFw0yMTAxMTcwMDA2MTJaMGwxCzAJBgNVBAYTAkZSMQ4wDAYD
@@ -304,4 +304,4 @@ r3/fbKJ02Ni9kCnkY8wQS1yn45UNl1woSjryza4f4uLKGkrrIsUPXK+Vy4A1Il8XgFfmrtgA8m9s
 EHyu0OyAJH/agWN+GLhF/ssp26oXhiYqTkG4sQtNRFQG0isaYf/JWSt3f8Q+7/pnZpz4mfEAFimI
 BBLzRwDA6x9qqOn0RXxBo9pH16EO3SXPLR64cJum8B/RI/i8H6OkQDO1tEiE6UeceZk++U7fnD3c
 6i9Km85GTgQi6REsVZGIL/tZNIzN//qPwi7cDo3Cf/xmPrIKQhHJaxCqmbjGDmC8AXOaqNfWotVX
-Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_75f68433-61b0-428d-9e21-8f261a044606" Target="#_3bd63522-1f05-4e13-9b26-9390e0750863"><Timestamp>2019-10-08 15:15:20</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_8669777a-9d2c-4d32-910d-c9c4117c716f" Target="#_00c8c746-200a-4742-af0b-07f18554abd4"><Timestamp>2019-10-08 15:18:03</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
