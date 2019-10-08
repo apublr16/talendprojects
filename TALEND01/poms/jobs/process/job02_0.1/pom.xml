@@ -63,13 +63,18 @@
       <version>2.2.1</version>
     </dependency>
     <dependency>
-      <groupId>com.oracle.jdbc</groupId>
-      <artifactId>ojdbc8</artifactId>
-      <version>12.2.0.1</version>
+      <groupId>org.talend.libraries</groupId>
+      <artifactId>ojdbc6</artifactId>
+      <version>6.0.0</version>
     </dependency>
     <dependency>
       <groupId>org.talend.libraries</groupId>
       <artifactId>org.talend.dataquality.parser</artifactId>
+      <version>6.0.0</version>
+    </dependency>
+    <dependency>
+      <groupId>org.talend.libraries</groupId>
+      <artifactId>talend-oracle-timestamptz</artifactId>
       <version>6.0.0</version>
     </dependency>
     <dependency>
